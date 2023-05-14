@@ -1,2 +1,2 @@
-All graph theory concepts and algorithm in JAVA and Python.
+All graph theory concepts and algorithm in JAVA.
 
