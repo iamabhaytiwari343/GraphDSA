@@ -11,3 +11,6 @@ weight of the edge is explicitly defined.
 |removeEdge| to remove edge from the vertex|
 | getData | to get data from the vertex|
 | getEdges| to get edges from the vertex |
+
+# Edge Class
+
