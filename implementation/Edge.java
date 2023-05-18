@@ -1,23 +1,29 @@
 package implementation;
-//import java.util.*;
+
+
 public class Edge {
+    //holds the start vertex
     private vertex start;
+    //holds the end vertex
     private vertex end;
+    //holds weight of every vertex
     private Integer weight;
-    public Edge(vertex start,vertex end,Integer inputWeight){
-        this.start=start;
-        this.end=end;
-        this.weight=inputWeight;
+
+    public Edge(vertex startV, vertex endV, Integer inputWeight) {
+        this.start = startV;
+        this.end = endV;
+        this.weight = inputWeight;
     }
-    public vertex getStart(){
+    // helper function to get starting vertex for the edge
+    public vertex getStart() {
         return this.start;
     }
-    public vertex getEnd(){
+    // helper function to get ending vertex for the edge
+    public vertex getEnd() {
         return this.end;
     }
-    public Integer getWeight(){
+    // helper function to get weight of the vertex
+    public Integer getWeight() {
         return this.weight;
     }
-    
 }
-
