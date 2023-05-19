@@ -5,18 +5,18 @@ class TestGraph {
 
     public TestGraph() {
         this.testGraph = new Graph(false, true);
-        vertex startNode = testGraph.addVertex("v0.0.0");
-        vertex v1 = this.testGraph.addVertex("v1.0.0");
-        vertex v2 = this.testGraph.addVertex("v2.0.0");
+        vertex startNode = testGraph.addVertex("one");
+        vertex v1 = this.testGraph.addVertex("two");
+        vertex v2 = this.testGraph.addVertex("three");
 
-        vertex v11 = this.testGraph.addVertex("v1.1.0");
-        vertex v12 = this.testGraph.addVertex("v1.2.0");
-        vertex v21 = this.testGraph.addVertex("v2.1.0");
+        vertex v11 = this.testGraph.addVertex("four");
+        vertex v12 = this.testGraph.addVertex("five");
+        vertex v21 = this.testGraph.addVertex("six");
 
-        vertex v111 = this.testGraph.addVertex("v1.1.1");
-        vertex v112 = this.testGraph.addVertex("v1.1.2");
-        vertex v121 = this.testGraph.addVertex("v1.2.1");
-        vertex v211 = this.testGraph.addVertex("v2.1.1");
+        vertex v111 = this.testGraph.addVertex("seven");
+        vertex v112 = this.testGraph.addVertex("eight");
+        vertex v121 = this.testGraph.addVertex("nine");
+        vertex v211 = this.testGraph.addVertex("ten");
 
         this.testGraph.addEdge(startNode, v1, null);
         this.testGraph.addEdge(startNode, v2, null);
