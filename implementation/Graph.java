@@ -1,8 +1,9 @@
 package implementation;
+
 import java.util.ArrayList;
 
 public class Graph {
-    
+
     private ArrayList<vertex> vertices;
     private boolean isWeighted;
     private boolean isDirected;
@@ -41,40 +42,40 @@ public class Graph {
     }
 
     public ArrayList<vertex> getVertices() {
-		return this.vertices;
-	}
+        return this.vertices;
+    }
 
-	public boolean isWeighted() {
-		return this.isWeighted;
-	}
+    public boolean isWeighted() {
+        return this.isWeighted;
+    }
 
-	public boolean isDirected() {
-		return this.isDirected;
-	}
+    public boolean isDirected() {
+        return this.isDirected;
+    }
 
-	public vertex getVertexByValue(String value) {
-		for(vertex v: this.vertices) { 
-			if (v.getData() == value) {
-				return v;
-			}
-		}
+    public vertex getVertexByValue(String value) {
+        for (vertex v : this.vertices) {
+            if (v.getData() == value) {
+                return v;
+            }
+        }
 
-		return null;
-	}
-	
-	public void print() {
-		for(vertex v: this.vertices) {
-			v.print(isWeighted);
-		}
-	}
+        return null;
+    }
 
-	public static void main(String[] args) {
+    public void print() {
+        for (vertex v : this.vertices) {
+            v.print(isWeighted);
+        }
+    }
+
+    public static void main(String[] args) {
         Graph busNetwork = new Graph(true, false);
-        vertex cliftonStation = busNetwork.addVertex("Clifton");
-        vertex capeMayStation = busNetwork.addVertex("Cape May");
+        vertex delhiStation = busNetwork.addVertex("New Delhi");
+        vertex mumbaiStation = busNetwork.addVertex("Mumbai");
 
-        busNetwork.addEdge(cliftonStation, capeMayStation, 1000);
-        
+        busNetwork.addEdge(delhiStation, mumbaiStation, 1500);
+
         busNetwork.print();
-	}
+    }
 }
